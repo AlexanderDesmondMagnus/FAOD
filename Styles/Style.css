@@ -1,0 +1,235 @@
+.navbut {
+
+    font-size: 2rem;
+    color: rgb(6, 53, 6);
+    background-color: blanchedalmond;
+    border-style: inset;
+    border-radius: 50px;
+
+}
+
+.Boxen {
+    color: rgb(0, 0, 0);
+}
+
+.headder {
+    font-weight: 800;
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    vertical-align: top;
+    text-shadow: 1px 1px 1px blanchedalmond,
+        1px -1px 1px blanchedalmond,
+        -1px 1px 1px blanchedalmond,
+        -1px -1px 1px blanchedalmond;
+}
+
+p {
+
+    color: rgb(17, 107, 29);
+    font-weight: 800;
+
+}
+
+
+.links {
+    display: flex;
+}
+
+.buttons {
+    flex: 1;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.grid-box {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    width: 75%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+
+}
+
+.Sidebar {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.box-1 {
+    font-weight: 800;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px blanchedalmond,
+        1px -1px 1px blanchedalmond,
+        -1px 1px 1px blanchedalmond,
+        -1px -1px 1px blanchedalmond;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.box-2 {
+    font-weight: 800;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px blanchedalmond,
+        1px -1px 1px blanchedalmond,
+        -1px 1px 1px blanchedalmond,
+        -1px -1px 1px blanchedalmond;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.box-3 {
+    font-weight: 800;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px blanchedalmond,
+        1px -1px 1px blanchedalmond,
+        -1px 1px 1px blanchedalmond,
+        -1px -1px 1px blanchedalmond;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.box-4 {
+    font-weight: 800;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px blanchedalmond,
+        1px -1px 1px blanchedalmond,
+        -1px 1px 1px blanchedalmond,
+        -1px -1px 1px blanchedalmond;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.box-5 {
+    font-weight: 800;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px blanchedalmond,
+        1px -1px 1px blanchedalmond,
+        -1px 1px 1px blanchedalmond,
+        -1px -1px 1px blanchedalmond;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.box-6 {
+    font-weight: 800;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px blanchedalmond,
+        1px -1px 1px blanchedalmond,
+        -1px 1px 1px blanchedalmond,
+        -1px -1px 1px blanchedalmond;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+html,
+body {
+    background-image: url(../Bilder/hell.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(41, 85, 44);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: (76, 90, 77);
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: (41, 85, 44);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
